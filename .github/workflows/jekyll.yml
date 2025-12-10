@@ -39,7 +39,7 @@ jobs:
           node-version: '20'    # or the version Chirpy docs recommend
       - name: Build Chirpy assets
         run: |
-          npm ci
+          npm install
           npm run build
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
