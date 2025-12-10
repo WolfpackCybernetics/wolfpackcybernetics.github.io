@@ -37,7 +37,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'    # or the version Chirpy docs recommend
-          cache: 'npm'
       - name: Build Chirpy assets
         run: |
           npm ci
