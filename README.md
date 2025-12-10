@@ -8,7 +8,7 @@
   ![Codacy Badge](https://img.shields.io/codacy/grade/4e556876a3c54d5e8f2d2857c4f43894?logo=codacy)
   ![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy?color=goldenrod)
 
-  ![Logo](assets/img/logo_black_red_transparent.png)
+  ![Logo](assets/img/logo_black_red_transparent_full.png)
 
 </div>
 
