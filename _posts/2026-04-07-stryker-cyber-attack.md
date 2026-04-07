@@ -63,7 +63,7 @@ The attacker obtained a compromised Microsoft 365 Global Admin account. With thi
 
 ### APT Infrastructure
 | Type | Indicator | Description | Confidence |
-|------|-----------|-------------|------------|
+|----------|--------|--------|-------|
 | Domain  | handala-hack[.]to                      | Actor claim/propaganda hosting; non-resolving at collection time.                        | MEDIUM     |
 | Domain  | handala[.]to                           | Alternate actor domain; non-resolving at collection time.                                | MEDIUM     |
 | URL     | t[.]me/HANDALA_HPR2                    | Actor Telegram channel used for claims and messaging.                                    | MEDIUM     |
@@ -81,15 +81,23 @@ The attacker obtained a compromised Microsoft 365 Global Admin account. With thi
 On March 11, 2026, Handala leveraged compromised Intune credentials to initiate a global device-wipe campaign against Stryker Corporation. The attack bypassed traditional defenses to factory reset over 80,000 endpoints without the use of malware or ransomware, causing a multi-day suspension of global manufacturing and electronic ordering before the incident was contained.
 
 ## References
-- https://www.stryker.com/us/en/about/news/2026/a-message-to-our-customers-03-2026.html
-- https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/
-- https://unit42.paloaltonetworks.com/threat-bulletin/march-2026/
-- https://www.protoslabs.io/resources/timeline-reconstruction-stryker-handala-threat-group-wiper-attack
-- https://www.seqrite.com/blog/iran-us-israel-cyberwar-2026-analysis/
-- https://research.checkpoint.com/2026/handala-hack-unveiling-groups-modus-operandi/
-- https://arcticwolf.com/resources/blog/stryker-systems-disrupted-cyber-attack-handala-group-claims-responsibility/
-- https://hackread.com/iran-handala-hackers-verifone-stryker-hacks/
-- https://www.bleepingcomputer.com/news/security/stryker-attack-wiped-tens-of-thousands-of-devices-no-malware-needed/
+https://www.stryker.com/us/en/about/news/2026/a-message-to-our-customers-03-2026.html
+
+https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/
+
+https://unit42.paloaltonetworks.com/threat-bulletin/march-2026/
+
+https://www.protoslabs.io/resources/timeline-reconstruction-stryker-handala-threat-group-wiper-attack
+
+https://www.seqrite.com/blog/iran-us-israel-cyberwar-2026-analysis/
+
+https://research.checkpoint.com/2026/handala-hack-unveiling-groups-modus-operandi/
+
+https://arcticwolf.com/resources/blog/stryker-systems-disrupted-cyber-attack-handala-group-claims-responsibility/
+
+https://hackread.com/iran-handala-hackers-verifone-stryker-hacks/
+
+https://www.bleepingcomputer.com/news/security/stryker-attack-wiped-tens-of-thousands-of-devices-no-malware-needed/
 
 Author: Josephino Cambosa
 Date: 2026-04-07
