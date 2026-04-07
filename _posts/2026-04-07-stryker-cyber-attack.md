@@ -8,6 +8,8 @@ image:
 ---
 ## Overview
 
+![Void Manticore online personas including Handala, Karmabelow80, and Homeland Justice](/assets/img/blog/2026-04-07/void-manticore-personas.png)
+
 **Who:** The Handala Hack Team (also tracked as Void Manticore, Red Sandstorm, Banished Kitten, Storm-0842) is reported as a pro-Palestinian hacktivist identity as of 2023. Handala is assessed as a prominent online persona of Void Manticore, a threat actor with known affiliation to the Ministry of Intelligence of the Islamic Republic of Iran. This threat actor has claimed responsibility for the following incidents:
 - [Compromising an Israeli energy exploration company](https://industrialcyber.co/industrial-cyber-attacks/us-israeli-campaign-triggers-iranian-counteroffensive-targeting-gulf-energy-critical-infrastructure/)
 - [Compromising Jordanian fuel systems](https://socradar.io/blog/dark-web-profile-handala-hack/)
@@ -20,7 +22,6 @@ image:
 
 ---
 ## Background
-![Void Manticore online personas including Handala, Karmabelow80, and Homeland Justice](/assets/img/blog/2026-04-07/void-manticore-personas.png)
 
 Over 200,000 corporate laptops, tablets, and mobile devices across 79 countries were remotely wiped and had the Handala logo set as their login screens.
 
@@ -39,8 +40,8 @@ The attacker obtained a compromised Microsoft 365 Global Admin account. With thi
 
 
 ## Fix Actions
-| Priority | Action                                                              | Detail                                                                                                                                                                                              | Owner                    |
-|----------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Priority | Action | Detail | Owner |
+|----------|--------|--------|-------|
 | 1        | Enforce multi-admin approvals for bulk remote wipes and MFA (FIDO2 hardware keys) on all MDM admin accounts                 | Require step-up authentication for any bulk device retire, reset, or wipe commands in Microsoft Intune. Prevents single-point administrative misuse from causing enterprise-wide device loss.        | Identity / Platform Team |
 | 2        | Prioritize identity and MDM privilege hardening                     | Enable Conditional Access and restrict privileged admin sign-ins by location and device posture. Limits attacker ability to abuse identity-plane controls for destructive actions.                   | Identity / IT            |
 | 3        | Deploy detection logic for mass remote-wipe activity across managed devices | Correlate Intune/MDM admin commands with device check-ins, unusual timing, and admin session geolocations. Alert on bulk retire/reset activity, sudden privilege escalation, or step-ups from new IP ranges. | SOC / Detection Team     |
@@ -48,8 +49,9 @@ The attacker obtained a compromised Microsoft 365 Global Admin account. With thi
 ## Indicators of Compromise
 
 ### MITRE ATT&CK Mapping
-| Tactic                   | Technique ID        | Technique                                                                                                           | Confidence |
-|--------------------------|---------------------|---------------------------------------------------------------------------------------------------------------------|------------|
+
+| Tactic | Technique ID | Technique | Confidence |
+|----------|--------|--------|-------|
 | Initial Access           | T1133               | External Remote Services — vendor reporting includes compromised remote access; not Stryker-confirmed.              | LOW-MED    |
 | Credential Access        | T1003.001           | OS Credential Dumping: LSASS Memory — reported in broader actor tradecraft; not Stryker-confirmed.                  | LOW-MED    |
 | Discovery                | T1087.002           | Account Discovery: Domain Account — relevant if identity/MDM abuse occurred.                                        | LOW-MED    |
@@ -60,8 +62,8 @@ The attacker obtained a compromised Microsoft 365 Global Admin account. With thi
 | Impact                   | T1561.001/T1561.002 | Disk Wipe / Disk Structure Wipe — relevant to wiper tradecraft reported for Handala.                                | MEDIUM     |
 
 ### APT Infrastructure
-| Type    | Indicator                              | Description                                                                              | Confidence |
-|---------|----------------------------------------|------------------------------------------------------------------------------------------|------------|
+| Type | Indicator | Description | Confidence |
+|------|-----------|-------------|------------|
 | Domain  | handala-hack[.]to                      | Actor claim/propaganda hosting; non-resolving at collection time.                        | MEDIUM     |
 | Domain  | handala[.]to                           | Alternate actor domain; non-resolving at collection time.                                | MEDIUM     |
 | URL     | t[.]me/HANDALA_HPR2                    | Actor Telegram channel used for claims and messaging.                                    | MEDIUM     |
