@@ -40,6 +40,7 @@ The attacker obtained a compromised Microsoft 365 Global Admin account. With thi
 3. At the top of the device overview pane, find the row of remote action icons. Select Wipe.
 
 ## Fix Actions
+
 | Priority | Action | Detail | Owner |
 |----------|--------|--------|-------|
 | 1 | Enforce multi-admin approvals for bulk remote wipes and MFA (FIDO2 hardware keys) on all MDM admin accounts | Require step-up authentication for any bulk device retire, reset, or wipe commands in Microsoft Intune. Prevents single-point administrative misuse from causing enterprise-wide device loss. | Identity / Platform Team |
@@ -62,6 +63,7 @@ The attacker obtained a compromised Microsoft 365 Global Admin account. With thi
 | Impact | T1561.001/T1561.002 | Disk Wipe / Disk Structure Wipe - relevant to wiper tradecraft reported for Handala. | MEDIUM |
 
 ### APT Infrastructure
+
 | Type | Indicator | Description | Confidence |
 |------|-----------|-------------|------------|
 | Domain | handala-hack[.]to | Actor claim/propaganda hosting; non-resolving at collection time. | MEDIUM |
