@@ -16,8 +16,11 @@ image:
 - [Targeting Israeli civilian healthcare](https://ransomwareattacks.halcyon.ai/attacks/ransomware-attack-on-sheba-medical-center-by-handala-exposes-sensitive-data)
 
 **What:** The widespread execution of a malicious wiping campaign after Stryker’s internal Microsoft Intune mobile device management console was compromised, resulting in the factory reset of corporate laptops, tablets, and mobile devices.
+
 **When:** Attack began on March 11, 2026 after midnight (EST).
+
 **Where:** Stryker Corporation employees were impacted globally.
+
 **Why:** Following the U.S.-Israeli strikes on February 28, 2026, Iran responded with a coordinated multidomain counteroffensive, shifting the initial engagement into a broad transregional war. As a prominent Iranian-aligned nation-state actor, Handala primarily targets organizations for the purposes of clandestine intelligence gathering alongside efforts to disrupt critical infrastructure and services. The Handala Stryker Corporation attack is reported to be the most impactful Iran-attributed attack against a Western company during this ongoing conflict.
 
 ---
